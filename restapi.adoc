@@ -1,7 +1,11 @@
 = REST API
 REST Architect <rest-architect@example.com>
-
+:awestruct-layout: base
+:source-highlighter: coderay
+ 
 An introduction to https://en.wikipedia.org/wiki/Representational_state_transfer[REST].
+
+This is part of the site _{sitename}_.
 
 == Introduction
 

@@ -1,4 +1,15 @@
-name: Project Name
+name: Fancy Solution
 title: Baked with Awestruct
-org: Organization
+org: ExampleCom
 base_url: ''
+
+asciidoctor:
+  :safe: safe
+  :attributes:
+    sitename: Fancy Solution
+    base_url: ''
+    ctx_path: ''
+    idprefix: ''
+    idseparator: '-'
+    sectanchors: ''
+    icons: font
