@@ -1,0 +1,34 @@
+= REST API
+REST Architect <rest-architect@example.com>
+
+An introduction to https://en.wikipedia.org/wiki/Representational_state_transfer[REST].
+
+== Introduction
+
+* Verbs
+* Status Codes
+* ...
+
+== Code Example
+
+
+----
+@Path(Environment.PATH)
+@SuppressWarnings(SuppressedWarnings.UNUSED)
+public class Environment {
+
+  public static final String STATUS_OK = "OK";
+
+  public static final String PATH = "/environment";
+
+  @GET
+  @Produces({ MediaType.APPLICATION_JSON })
+  @SuppressWarnings(SuppressedWarnings.UNUSED)
+  public Response getEnvironment() {
+    return Response.ok()
+       .entity(new EnvironmentSummary(STATUS_OK))
+       .build();
+  }
+
+}
+----
