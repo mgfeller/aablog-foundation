@@ -2,6 +2,8 @@
 REST Architect <rest-architect@example.com>
 :awestruct-layout: base
 :source-highlighter: coderay
+:coderay-css: class
+:linkcss: 
  
 An introduction to https://en.wikipedia.org/wiki/Representational_state_transfer[REST].
 
@@ -15,7 +17,7 @@ This is part of the site _{sitename}_.
 
 == Code Example
 
-
+[source,Java]
 ----
 @Path(Environment.PATH)
 @SuppressWarnings(SuppressedWarnings.UNUSED)

@@ -7,6 +7,8 @@
   <title>Baked with Awestruct</title>
   <link href="/stylesheets/normalize.css" rel="stylesheet">
   <link href="/stylesheets/app.css" rel="stylesheet">
+  <link href="/stylesheets/asciidoctor.css" rel="stylesheet">
+  <link href="/stylesheets/coderay-asciidoctor.css" rel="stylesheet">
   <script src="/javascripts/vendor/custom.modernizr.js"></script>
   <link href="/humans.txt" rel="author" type="text/plain">
 </head>
@@ -67,7 +69,7 @@
       <div class="sectionbody">
       <div class="listingblock">
       <div class="content">
-      <pre>@Path(Environment.PATH)&#x000A;@SuppressWarnings(SuppressedWarnings.UNUSED)&#x000A;public class Environment {&#x000A;&#x000A;  public static final String STATUS_OK = "OK";&#x000A;&#x000A;  public static final String PATH = "/environment";&#x000A;&#x000A;  @GET&#x000A;  @Produces({ MediaType.APPLICATION_JSON })&#x000A;  @SuppressWarnings(SuppressedWarnings.UNUSED)&#x000A;  public Response getEnvironment() {&#x000A;    return Response.ok()&#x000A;       .entity(new EnvironmentSummary(STATUS_OK))&#x000A;       .build();&#x000A;  }&#x000A;&#x000A;}</pre>
+      <pre class="CodeRay highlight"><code data-lang="Java"><span class="annotation">@Path</span>(Environment.PATH)&#x000A;<span class="annotation">@SuppressWarnings</span>(SuppressedWarnings.UNUSED)&#x000A;<span class="directive">public</span> <span class="type">class</span> <span class="class">Environment</span> {&#x000A;&#x000A;  <span class="directive">public</span> <span class="directive">static</span> <span class="directive">final</span> <span class="predefined-type">String</span> STATUS_OK = <span class="string"><span class="delimiter">&quot;</span><span class="content">OK</span><span class="delimiter">&quot;</span></span>;&#x000A;&#x000A;  <span class="directive">public</span> <span class="directive">static</span> <span class="directive">final</span> <span class="predefined-type">String</span> PATH = <span class="string"><span class="delimiter">&quot;</span><span class="content">/environment</span><span class="delimiter">&quot;</span></span>;&#x000A;&#x000A;  <span class="annotation">@GET</span>&#x000A;  <span class="annotation">@Produces</span>({ MediaType.APPLICATION_JSON })&#x000A;  <span class="annotation">@SuppressWarnings</span>(SuppressedWarnings.UNUSED)&#x000A;  <span class="directive">public</span> Response getEnvironment() {&#x000A;    <span class="keyword">return</span> Response.ok()&#x000A;       .entity(<span class="keyword">new</span> EnvironmentSummary(STATUS_OK))&#x000A;       .build();&#x000A;  }&#x000A;&#x000A;}</code></pre>
       </div>
       </div>
       </div>
