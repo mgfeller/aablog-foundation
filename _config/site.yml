@@ -1,6 +1,6 @@
 name: Fancy Solution
 title: Fancy Solution - Baked with Awestruct
-org: ExampleCom
+organization: ExampleCom
 base_url: ''
 
 asciidoctor:
