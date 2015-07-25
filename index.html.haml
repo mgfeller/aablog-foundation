@@ -9,6 +9,30 @@ layout: base
 .row
   .large-12.columns
     .panel
+      %p
+        %a(href="https://github.com/awestruct/awestruct/issues/480")="Issue 480: Variables site.org and site.com are not evaluated correctly when using JRuby"
+      %p 
+        Variable 
+        %em site.org
+        should evaluate to "MyOrg". It is evaluated to:  
+        "#{site.org}"
+        - if site.org.to_s ==  "MyOrg"
+          %strong -- Success
+        - else 
+          %strong -- Failure 
+      %p 
+        Variable 
+        %em site.com
+        should evaluate to "MyCom". It is evaluated to: 
+        "#{site.com}"
+        - if site.com.to_s ==  "MyCom"
+          %strong -- Success
+        - else 
+          %strong -- Failure 
+  
+.row
+  .large-12.columns
+    .panel
       %h3 Get started
       %p This site is all setup to use Foundation 4 with Awestruct.
       %a.button{:href=>'http://foundation.zurb.com'} Check out Foundation 4

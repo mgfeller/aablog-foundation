@@ -2,6 +2,8 @@ name: Fancy Solution
 title: Fancy Solution - Baked with Awestruct
 organization: ExampleCom
 base_url: ''
+org: MyOrg
+com: MyCom
 
 asciidoctor:
   :safe: safe
