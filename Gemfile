@@ -44,4 +44,7 @@ gem 'asciidoctor', '>= 0.1.1'                           # If using AsciiDoc synt
 gem 'kramdown', '>= 0.14.2'                             # If using Markdown
 gem 'uglifier', '>= 1.3.0'                              # If using the minify transformer
 gem 'htmlcompressor', '>= 0.0.3'                        # If using the minify transformer
+gem 'celluloid', '0.16.0'                               # 0.17.0 doesn't work
+gem 'guard'
+gem 'guard-shell'
 
