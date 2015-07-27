@@ -2,8 +2,8 @@
 # More info at https://github.com/guard/guard#readme
 
 ## Uncomment and set this to only include directories you want to watch
-# directories %w(app lib config test spec features) \
-#  .select{|d| Dir.exists?(d) ? d : UI.warning("Directory #{d} does not exist")}
+directories %w(_config _ext _layouts javascripts stylesheets .) \
+  .select{|d| Dir.exists?(d) ? d : UI.warning("Directory #{d} does not exist")}
 
 ## Note: if you are using the `directories` clause above and you are not
 ## watching the project directory ('.'), then you will want to move
@@ -25,7 +25,5 @@ interactor :off
 logger device: 'guard.log'
 
 guard :shell do
-  watch /.*/ do |m|
-      m[0] + " has changed."
-  end
+  watch(%r{.+\.(adoc|haml|yml|rb|css|scss)}) { `awestruct -g` }
 end
